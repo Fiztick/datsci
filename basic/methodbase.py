@@ -16,6 +16,25 @@ def biodata():
     biodata = [
         {"nama": "bagus", "alamat": "depok"},
         {"nama": "mahesa", "alamat": "depok"},
-        {"nama": "hafiz", "alamat": "depok"}
+        {"nama": "hafiz", "alamat": "depok"},
+        {"nama": "adi", "alamat": "depok"}
     ]
-    return biodata
+
+    biodata_list = [
+        ["bagus", "depok"],
+        ["mahesa", "depok"],
+        ["hafiz", "depok"],
+        ["adi", "depok"]
+    ]
+
+    return biodata, biodata_list
+
+
+def biodata_list():
+    biodata_list = [
+        ["bagus", "depok"],
+        ["mahesa", "depok"],
+        ["hafiz", "depok"],
+        ["adi", "depok"]
+    ]
+    return biodata_list

@@ -1,22 +1,29 @@
 from random import random
 
 class User:
+    # Class
 
-    def __init__(self, keys):
-        self.key = keys
+    def __init__(self, keys: int, nama):
+        self.keys = keys
+        self.nama = nama
+        # Class Constructor
 
     def pertambahan(self, data):
         result = []
         for i, item in enumerate(data):
-            hasil = item + self.key
-            result.append({"bagus": hasil})
+            hasil_tambah = item + self.keys
+            hasil_kurang = item - self.keys
+
+            result.append({"tambah": hasil_tambah, "kurang": hasil_kurang})
+            # print(i, "hasil = ", hasil)
 
         return result
 
     def pembagian(self, data):
+        
         result = []
         for i, baris in enumerate(data):
-            result.append(baris / self.key)
+            result.append(baris / self.keys)
         return result
 
     def random_max(self, data):
