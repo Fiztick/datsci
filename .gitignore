@@ -1,1 +1,6 @@
+.ipynb_checkpoints
+.vscode
+anime_recommender/__pycache__
 basic/__pycache__
+grocery/__pycache__
+pokemon/__pycache__
