@@ -10,10 +10,8 @@ def argument_parser():
     return args
 
 def train(args):
-
     preprocessor(args.data_dir)    
     # print(data)
-    
 
 if __name__ == '__main__':
     args = argument_parser()
