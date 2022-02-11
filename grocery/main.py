@@ -19,9 +19,10 @@ def load_dataset(dir: str):
     # Remove NAN from Dataset
     d_grocery = d_grocery.dropna(how="all")
     
-
+    # Changing datas to numeric
     # d_grocery = d_grocery[d_grocery["Order ID"].str[0:2] != 'Or']
     d_grocery = d_grocery[d_grocery["Order ID"].str.isnumeric()]
+
 
     d_grocery["Quantity Ordered"] = pd.to_numeric(d_grocery["Quantity Ordered"])
     d_grocery["Price Each"] = pd.to_numeric(d_grocery["Price Each"])
